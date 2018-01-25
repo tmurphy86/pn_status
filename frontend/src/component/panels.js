@@ -1,20 +1,34 @@
 import React from "react";
-import { Panel } from 'react-bootstrap';
+import { Panel, Row, Col, Grid } from 'react-bootstrap';
+import {Guide} from './index.js';
 
 const PanelsInstance = () => (
 	<div>
+	<Grid>
+  <Row className="show-grid">
 		<Panel bsStyle="primary">
-			<Panel.Heading>Panel heading without a title</Panel.Heading>
-			<Panel.Body>Panel content</Panel.Body>
+			<Panel.Heading>IT Operations</Panel.Heading>
 		</Panel>
-		<Panel>
-			<Panel.Heading>
-				<Panel.Title componentClass="h3">
-					Panel heading with a title
-				</Panel.Title>
-			</Panel.Heading>
-			<Panel.Body>Panel content</Panel.Body>
-		</Panel>
+	</Row>
+	<Row>
+    <Col xs={12} md={8}>
+			<Panel bsStyle="success">
+				<Panel.Heading>Email</Panel.Heading>
+				<Panel.Body>No known issues</Panel.Body>
+				<Panel.Heading>Authentication</Panel.Heading>
+				<Panel.Body>No known issues</Panel.Body>
+				<Panel.Heading>SharePoint</Panel.Heading>
+				<Panel.Body>No known issues</Panel.Body>
+				<Panel.Heading>GotoMeeting</Panel.Heading>
+				<Panel.Body>No known issues</Panel.Body>
+			</Panel>
+
+    </Col>
+    <Col xs={6} md={4}>
+      <Guide></Guide>
+    </Col>
+  </Row>
+	</Grid>
 	</div>
 );
 

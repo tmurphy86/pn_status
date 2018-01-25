@@ -1,34 +1,26 @@
 import React from "react";
-import { Jumbotron} from 'react-bootstrap';
-import { PanelsInstance } from './index.js';
+import {Jumbotron, Panel, Row, Col, Grid} from 'react-bootstrap';
 
 const Status = () => (
-  <div className="main-container">
-    <Jumbotron>
-    <div className="jumbotron">
-      <h1>General Status</h1>
-      <p className= 'goforgreen'>Operational</p>
-      <p>
-        <a className="btn btn-primary btn-lg">Learn more</a>
-      </p>
-    </div>
-    <div className="panel panel-default">
-      <div className="panel-heading">
-        <h3 className="panel-title">Email</h3>
-      </div>
-      <div className="panel-body">Email is operational</div>
-    </div>
-    <div className="panel panel-default">
-      <div className="panel-heading">
-        <h3 className="panel-title">Authentication</h3>
-      </div>
-      <div className="panel-body">Authentication is operational</div>
-    </div>
-    </Jumbotron>
-    <PanelsInstance>
-    </PanelsInstance>
-  </div>
+  // <Grid>
+  //    <Row className="show-grid">
+  //        <Col xs={1} md={2}></Col>
+  //        <Col xs={8} md={8}>
 
+
+  <Panel className="center-block">
+        <h1 className="text-center">General Status</h1>
+        <Panel bsStyle="primary">
+          <Panel.Heading >Organizational Updates</Panel.Heading>
+          <Panel.Body>
+            At 5PM EST 1/26/2018 PN will cut over from ADFS to AzureAD. Please refrain from using the system at that time unless you are asked to verify by IT.
+          </Panel.Body>
+        </Panel>
+  </Panel>
+//   </Col>
+// <Col xs={1} md={2}></Col>
+// </Row>
+// </Grid>
 );
 
 export default Status;

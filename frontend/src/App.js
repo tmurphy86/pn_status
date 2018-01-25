@@ -1,24 +1,23 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import logo from './logo-h-pn.svg';
 import './App.css';
+import {Jumbotron, Panel} from 'react-bootstrap';
 
 // ---------------------------------
 // Custom Imports
-import { Status, PanelsInstance } from './component/index.js';
+import {Status, PanelsInstance, Guide} from './component/index.js';
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+    return (<div className="App">
+      <Jumbotron className="App-header">
+          <img src={logo} className="App-logo" alt="logo"/>
           <h1 className="App-title">Prosperity Now's Technology Status</h1>
-        </header>
-        <Status></Status>
-        <PanelsInstance></PanelsInstance>
-      </div>
+      </Jumbotron>
+      <Status></Status>
+      <PanelsInstance></PanelsInstance>
 
-    );
+    </div>);
   }
 }
 
