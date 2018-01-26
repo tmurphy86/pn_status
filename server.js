@@ -9,7 +9,7 @@ const express = require('express');
 const app = express();
 
 const PORT = process.env.PORT || 3001;
-app.listen(port);
+app.listen(PORT);
 
 // parse various different custom JSON types as JSON
 app.use(bodyParser.json({ type: 'application/*+json' }))
