@@ -2,11 +2,19 @@
   "name": "pn_status",
   "version": "1.0.0",
   "description": "Showing the status of IT Services",
-  "main": "cd frontend && yarn install && yarn start app.js",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
+  },
   "scripts": {
-    "start": "cd frontend && yarn install && yarn start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "node server.js",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
   }
 }
