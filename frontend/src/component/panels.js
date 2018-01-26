@@ -12,15 +12,15 @@ const PanelsInstance = () => (
 	</Row>
 	<Row>
     <Col xs={12} md={8}>
-			<Panel bsStyle="success">
+			<Panel bsStyle="danger">
 				<Panel.Heading>Email</Panel.Heading>
-				<Panel.Body>No known issues</Panel.Body>
+				<Panel.Body>Maintenance</Panel.Body>
 				<Panel.Heading>Authentication</Panel.Heading>
-				<Panel.Body>No known issues</Panel.Body>
+				<Panel.Body>Maintenance</Panel.Body>
 				<Panel.Heading>SharePoint</Panel.Heading>
-				<Panel.Body>No known issues</Panel.Body>
-				<Panel.Heading>GotoMeeting</Panel.Heading>
-				<Panel.Body>No known issues</Panel.Body>
+				<Panel.Body>Maintenance</Panel.Body>
+				{/* <Panel.Heading>GotoMeeting</Panel.Heading>
+				<Panel.Body>No known issues</Panel.Body> */}
 			</Panel>
 
     </Col>

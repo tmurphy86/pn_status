@@ -13,7 +13,7 @@ const Status = () => (
         <Panel bsStyle="primary">
           <Panel.Heading >Organizational Updates</Panel.Heading>
           <Panel.Body>
-            At 5PM EST 1/26/2018 PN will cut over from ADFS to AzureAD. Please refrain from using the system at that time unless you are asked to verify by IT.
+            Authentication is down as of 5PM EST, this will stop email and access to SharePoint. We will update as the progress is made.
           </Panel.Body>
         </Panel>
   </Panel>
