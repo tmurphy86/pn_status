@@ -13,7 +13,12 @@ const Status = () => (
         <Panel bsStyle="primary">
           <Panel.Heading >Organizational Updates</Panel.Heading>
           <Panel.Body>
-            Authentication is down as of 5PM EST, this will stop email and access to SharePoint. We will update as the progress is made.
+Cutover work has been completed at this time. You should do the following to resume operations:
+Login to your computer as you did this morning
+Update your credential to @prosperitynow.org in email, skype, sharepoint, onedrive, etc)
+If you experience issues- use the following guide to solve authentication problems: https://prosperitynow.freshdesk.com/support/solutions/articles/36000008980-name-switch-login-issues
+Recreate standing Skype meetings with your "new" username ( Weird I know but required based on the way Microsoft built their links)
+Submit a ticket if you are still experiencing issues logging in (*After following bullet 3!*)
           </Panel.Body>
         </Panel>
   </Panel>
